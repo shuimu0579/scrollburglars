@@ -2,11 +2,38 @@
 
 ## 解决方案
 
+- 模拟器调试很方便。在 devtool 中进入移动端模拟器调试模式，通过二分法，display: none 元素， 来找到出现问题的元素。
+- 模拟器上好了之后，在真机上验证。讲到调试，还是模拟器调试比真机调试好用。
+
 ### 01-recut
 
 ```js
 // 添加如下代码
 style = "max-width: min(100%, 28rem) !important";
+```
+
+### 02-warp-and-weave
+
+```js
+// 添加如下代码
+style = "overflow: hidden";
+```
+
+### 03-blog-example
+
+```js
+// 添加如下代码
+.heading-decoration {
+  position: absolute;
+  top: -25px;
+  /* right: 0px; */
+  right: 30px;
+  width: 75px;
+  height: 75px;
+  background: papayawhip;
+  opacity: 1;
+  transform: translateX(12px) skew(-24deg);
+}
 ```
 
 In this exercise, your goal is to find and fix the scrollburglars across 3 different projects.
