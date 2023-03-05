@@ -1,5 +1,14 @@
 # Scrollburglars Exercise
 
+## 解决方案
+
+### 01-recut
+
+```js
+// 添加如下代码
+style = "max-width: min(100%, 28rem) !important";
+```
+
 In this exercise, your goal is to find and fix the scrollburglars across 3 different projects.
 
 ## Running the projects
